@@ -2,7 +2,7 @@ from ..imports import *
 
 
 # Function to rename multiple files 
-def main(): 
+def rename_files(): 
     i = 0
       
     for filename in os.listdir("."): #List all the files from the working directory
@@ -10,3 +10,4 @@ def main():
         dst ="Image" + str(i) + e_name #Destination filename
         os.rename(filename,dst) #Rename the file
         i += 1  #Increment the file numbers
+    print("All files has been renamed successfully...")
